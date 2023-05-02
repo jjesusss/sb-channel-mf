@@ -1,0 +1,112 @@
+// @import '/src/app/styles/sass/colors';
+// @import '/src/app/styles/sass/fonts';
+// @import '/src/app/styles/sass/mixin';
+// @import '/src/app/styles/sass/config';
+
+.imgAgro {
+  max-width: 300px;
+  height: 62px;
+  margin-top: 1.7em;
+  margin-bottom: 2em;
+  align-self: flex-start;
+  // @include for-size(tablet) {
+  //   margin-top: 1em;
+  //   margin-bottom: 1em;
+  // }
+}
+
+.text {
+  //font-family: $PlusJakarta;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  width: 560px;
+  align-self: flex-start;
+  margin-bottom: 1em;
+  // @include for-size(tablet) {
+  //   width: 100%;
+  // }
+}
+.sectionDetails {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-bottom: 4em;
+  margin-top: 1em;
+  flex-wrap: wrap;
+  // @include for-size(tablet) {
+  //   margin-bottom: 0;
+  // }
+}
+
+.videoSection {
+  width: 500px;
+  height: 282px;
+  margin-right: 1em;
+}
+
+.infoSection {
+  width: 560px;
+  height: 282px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.live {
+  padding: 4px 8px;
+  width: 70px;
+  height: 23px;
+  background: #e70061;
+  border-radius: 20px;
+
+  //font-family: $PlusJakarta;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+
+.subscribe {
+  width: 210px;
+  height: 40px;
+  background: #be00ff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  //font-family: $PlusJakarta;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+}
+
+// @include for-size(tablet) {
+//   .sectionDetails {
+//     width: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//   }
+
+//   .videoSection {
+//     width: 100%;
+//     height: 282px;
+//   }
+
+//   .infoSection {
+//     width: 100%;
+//     height: 282px;
+//     padding: 1em;
+//   }
+// }

@@ -1,0 +1,23 @@
+@use "/src/app/styles/sass/colors";
+@import "/src/app/styles/sass/fonts";
+@import "/src/app/styles/sass/mixin";
+@import "/src/app/styles/sass/config";
+
+.ScreenBidPage {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto 100px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1140px;
+}

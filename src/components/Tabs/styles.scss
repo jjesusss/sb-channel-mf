@@ -1,0 +1,60 @@
+$primary-color: #007bff;
+
+.tab-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  border-radius: 4px;
+  overflow: hidden;
+
+  .tab-header {
+    width: 75%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 2rem;
+    .tab-button {
+      width: 120px;
+      height: 30px;
+      font-family: "Manrope";
+      justify-content: center;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #909090;
+      border-bottom: 0.5px solid #bbbdc2;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      background: transparent;
+
+      &.active {
+        border-bottom: 2px solid transparent;
+        border-image: linear-gradient(90deg, #ff6600 0%, #bd26fc 100%);
+        border-image-slice: 1;
+        color: #313234;
+      }
+      &:hover {
+        color: #313234;
+      }
+    }
+  }
+
+  .tab-content {
+    padding: 16px;
+
+    .tab-pane {
+      display: none;
+
+      &.active {
+        display: block;
+        max-width: 1280px;
+      }
+    }
+  }
+}

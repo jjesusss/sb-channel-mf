@@ -1,0 +1,1 @@
+export { AgrobidPage } from './AgrobidPage';

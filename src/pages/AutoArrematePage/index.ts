@@ -1,0 +1,1 @@
+export { AutoArrematePage } from "./AutoArrematePage";

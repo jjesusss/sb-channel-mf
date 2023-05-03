@@ -1,11 +1,13 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const path = require('path');
 
 const deps = require("./package.json").dependencies;
 module.exports = (_, argv) => ({
   output: {
     publicPath: "http://localhost:3003/",
+    path: path.resolve(__dirname, 'public')
   },
 
   resolve: {

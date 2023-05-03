@@ -6,7 +6,7 @@ const path = require('path');
 const deps = require("./package.json").dependencies;
 module.exports = (_, argv) => ({
   output: {
-    publicPath: "http://localhost:3003/",
+    publicPath: "https://sb-channel-mf.vercel.app/",
     path: path.resolve(__dirname, 'public')
   },
 

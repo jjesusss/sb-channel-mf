@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./styles.scss";
+import styles from "./styles.module.scss";
 
 function CardSlider(props: any) {
   const {
@@ -29,7 +29,9 @@ function CardSlider(props: any) {
         // eslint-disable-next-line jsx-a11y/no-static-element-interactions
         <span
           key={i}
-          className={`slider-dot ${i === currentIndex ? "active" : ""}`}
+          className={`${styles["slider-dot"]} ${
+            i === currentIndex ? styles["active"] : ""
+          }`}
           onClick={() => {
             setCurrentIndex(i);
           }}
@@ -41,9 +43,9 @@ function CardSlider(props: any) {
   };
 
   return (
-    <div className="slider">
+    <div className={styles["slider"]}>
       <div
-        className="slider-container"
+        className={styles["slider-container"]}
         style={{
           transform: `translateX(-${currentIndex * containerWidth}px)`,
           width: `${containerWidth * children.length}px`,
@@ -61,7 +63,7 @@ function CardSlider(props: any) {
             // eslint-disable-next-line react/no-array-index-key
             <div
               key={index}
-              className="slider-card"
+              className={styles["slider-card"]}
               style={{
                 width: `${containerWidth}px`,
                 height: `${cardHeight}px`,
@@ -72,8 +74,11 @@ function CardSlider(props: any) {
           )
         )}
       </div>
-      <div style={{ top: positionButtons }} className="slider-controls">
-        <div className="slider-controls-container">
+      <div
+        style={{ top: positionButtons }}
+        className={styles["slider-controls"]}
+      >
+        <div className={styles["slider-controls-container"]}>
           <button
             style={{
               background: `url(/images/ArrowLeft.svg) no-repeat`,
@@ -96,7 +101,7 @@ function CardSlider(props: any) {
           />
         </div>
       </div>
-      <div className="slider-dots">{renderDots()}</div>
+      <div className={styles["slider-dots"]}>{renderDots()}</div>
     </div>
   );
 }

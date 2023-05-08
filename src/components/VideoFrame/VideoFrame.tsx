@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.scss";
+import styles from "./styles.module.scss";
 
 const VideoFrame = (props: {
   UrlVideo: any;
@@ -10,9 +10,9 @@ const VideoFrame = (props: {
   const embedId = UrlVideo?.split("?v=")[1];
 
   return (
-    <div className="videoResponsive">
+    <div className={styles["videoResponsive"]}>
       <iframe
-        className="videoIframe"
+        className={styles["videoIframe"]}
         src={`https://www.youtube.com/embed/${embedId}?autoplay=1&mute=1&controls=${
           controls ? 1 : 0
         }&mute=0&loop=1&playlist=${embedId}`}

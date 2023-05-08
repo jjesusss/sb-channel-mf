@@ -24,7 +24,7 @@ export function useChannel() {
         payload: "Falha ao obter videos ",
       });
     }
-  }, [dispatch])
+  }, [dispatch]);
 
   const getLiveAutoVideos = useCallback(async () => {
     dispatch({ type: channelActionTypes.getAutoVideosRequest });
@@ -43,8 +43,7 @@ export function useChannel() {
         payload: "Falha ao obter videos ",
       });
     }
-  }, [dispatch]
-  )
+  }, [dispatch]);
   const getLiveAgroVideos = useCallback(async () => {
     dispatch({ type: channelActionTypes.getLiveAgroVideosRequest });
     try {
@@ -62,7 +61,7 @@ export function useChannel() {
         payload: "Falha ao obter videos ",
       });
     }
-  }, [dispatch])
+  }, [dispatch]);
 
   const getAutoVideos = useCallback(async () => {
     dispatch({ type: channelActionTypes.getLiveAutoVideosRequest });
@@ -81,7 +80,7 @@ export function useChannel() {
         payload: "Falha ao obter videos ",
       });
     }
-  }, [dispatch])
+  }, [dispatch]);
 
   return {
     getAgroVideos,

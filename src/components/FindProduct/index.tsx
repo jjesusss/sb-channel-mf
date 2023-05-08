@@ -1,16 +1,16 @@
 import React from "react";
-import "./styles.scss";
+import styles from "./styles.module.scss";
 
 const FindProduct = () => (
-  <div className="FindPage">
+  <div className={styles["FindPage"]}>
     <h3>Encontre o carro ideal pra você</h3>
     <span />
-    <div className="content">
+    <div className={styles["content"]}>
       {[1, 2, 3, 4, 5].map((_, i) => (
         // eslint-disable-next-line react/no-array-index-key
-        <div className="cardProduct" key={i}>
+        <div className={styles["cardProduct"]} key={i}>
           <img src="/images/imageFind.svg" alt="" />
-          <div className="fcard">
+          <div className={styles["fcard"]}>
             <h4>Para família</h4>
           </div>
         </div>

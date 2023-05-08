@@ -1,13 +1,13 @@
 import React from "react";
-import "./styles.scss";
+import styles from "./styles.module.scss";
 import CardBlog from "../CardBlog";
 import CardSlider from "../CardSlider";
 
 const About = () => (
-  <div className="AboutPage">
+  <div className={styles["AboutPage"]}>
     <h3>Tudo sobre colecionáveis</h3>
     <span />
-    <div className="content">
+    <div className={styles.content}>
       <CardSlider visibleCards={2} cardHeight={187}>
         <CardBlog />
         <CardBlog />

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./styles.scss";
+import styles from "./styles.module.scss";
 
 // eslint-disable-next-line react/prop-types
 function Tabs(props: any) {
@@ -11,8 +11,8 @@ function Tabs(props: any) {
   };
 
   return (
-    <div className="tab-wrapper">
-      <div className="tab-header">
+    <div className={styles["tab-wrapper"]}>
+      <div className={styles["tab-header"]}>
         {/* <img src={bidtImage} alt="" /> */}
         {
           // eslint-disable-next-line react/prop-types
@@ -21,8 +21,8 @@ function Tabs(props: any) {
               // eslint-disable-next-line react/no-array-index-key
               key={index}
               className={[
-                "tab-button ",
-                activeTab === index ? "active" : "",
+                `${styles["tab-button"]}`,
+                activeTab === index ? styles["active"] : "",
               ].join(" ")}
               onClick={() => handleTabClick(index)}
             >
@@ -31,16 +31,17 @@ function Tabs(props: any) {
           ))
         }
       </div>
-      <div className="tab-content">
+      <div className={styles["tab-content"]}>
         {
           // eslint-disable-next-line react/prop-types
           tabs.map((tab: any, index: React.Key | null | undefined) => (
             // eslint-disable-next-line react/no-array-index-key
             <div
               key={index}
-              className={["tab-pane", activeTab === index ? "active" : ""].join(
-                " "
-              )}
+              className={[
+                `${styles["tab-pane"]}`,
+                activeTab === index ? styles["active"] : "",
+              ].join(" ")}
             >
               {tab.content}
             </div>

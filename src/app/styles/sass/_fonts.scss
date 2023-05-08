@@ -1,0 +1,153 @@
+// Typography
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;0,500;0,700;0,800;1,300&display=swap");
+
+/**
+  * @tokens Font Families
+  * @presenter FontFamily
+  */
+
+$Manrope: "Manrope", sans-serif;
+$PlusJakarta: "Plus Jakarta Sans", sans-serif;
+$Inter: "Inter", sans-serif;
+
+/**
+  * @tokens Font Sizes
+  * @presenter FontSize
+  */
+$header-xxl-font-size: 30px;
+$header-xl-font-size: 26px;
+$header-l-font-size: 24px;
+$header-m-font-size: 20px;
+$header-s-font-size: 18px;
+$header-xs-font-size: 16px;
+
+$title-xxl-font-size: 30px;
+$title-xl-font-size: 26px;
+$title-l-font-size: 24px;
+$title-m-font-size: 20px;
+$title-s-font-size: 18px;
+$title-xs-font-size: 16px;
+
+$sub-xxl-font-size: 30px;
+$sub-xl-font-size: 26px;
+$sub-l-font-size: 24px;
+$sub-m-font-size: 20px;
+$sub-s-font-size: 18px;
+$sub-xs-font-size: 16px;
+
+$body: 16px;
+$body_s: 14px;
+$body_xs: 12px;
+
+$button_label : 16px;
+
+/**
+  * @tokens Font Weights
+  * @presenter FontWeight
+  */
+$header-xxl-font-weight: 800;
+$header-xl-font-weight: 800;
+$header-l-font-weight: 800;
+$header-m-font-weight: 800;
+$header-s-font-weight: 800;
+$header-xs-font-weight: 800;
+
+$title-xxl-font-weight: 800;
+$title-xl-font-weight: 800;
+$title-l-font-weight: 800;
+$title-m-font-weight: 800;
+$title-s-font-weight: 800;
+$title-xs-font-weight: 800;
+
+$sub-xxl-font-weight: 800;
+$sub-xl-font-weight: 800;
+$sub-l-font-weight: 800;
+$sub-m-font-weight: 800;
+$sub-s-font-weight: 800;
+$sub-xs-font-weight: 800;
+
+/**
+  * @tokens Line Heights
+  * @presenter LineHeight
+  */
+$header-xxl-line-height: 41px;
+$header-xl-line-height: 35px;
+$header-l-line-height: 24px;
+$header-m-line-height: 20px;
+$header-s-line-height: 18px;
+$header-xs-line-height: 16px;
+
+/**
+  * @tokens Letter Spacings
+  * @presenter LetterSpacing
+  */
+
+$header-xxl-letter-spacing: -0.02em;
+$header-xl-letter-spacing: -0.02em;
+$header-l-letter-spacing: 0;
+$header-m-letter-spacing: 0;
+$header-s-letter-spacing: 0;
+$header-xs-letter-spacing: 0;
+
+/**
+  * @tokens Font Header
+  * @presenter FontFamily
+  */
+.header-xxl {
+  font-family: $PlusJakarta;
+  font-style: normal;
+  font-weight: $header-xxl-font-weight;
+  font-size: $header-xxl-font-size;
+  line-height: $header-xxl-line-height;
+
+  letter-spacing: $header-xxl-letter-spacing;
+}
+
+.header-xl {
+  font-family: $PlusJakarta;
+  font-style: normal;
+  font-weight: $header-xl-font-weight;
+  font-size: $header-xl-font-size;
+  line-height: $header-xl-line-height;
+
+  letter-spacing: $header-xl-letter-spacing;
+}
+
+.header-l {
+  font-family: $PlusJakarta;
+  font-style: normal;
+  font-weight: $header-l-font-weight;
+  font-size: $header-l-font-size;
+  line-height: $header-l-line-height;
+  letter-spacing: $header-l-letter-spacing;
+}
+
+.header-m {
+  font-family: $PlusJakarta;
+  font-style: normal;
+  font-weight: $header-m-font-weight;
+  font-size: $header-m-font-size;
+  line-height: $header-m-line-height;
+
+  letter-spacing: $header-m-letter-spacing;
+}
+
+.header-s {
+  font-family: $PlusJakarta;
+  font-style: normal;
+  font-weight: $header-s-font-weight;
+  font-size: $header-s-font-size;
+  line-height: $header-s-line-height;
+
+  letter-spacing: $header-s-letter-spacing;
+}
+
+.header-xs {
+  font-family: $PlusJakarta;
+  font-style: normal;
+  font-weight: $header-xs-font-weight;
+  font-size: $header-xs-font-size;
+  line-height: $header-xs-line-height;
+
+  letter-spacing: $header-xs-letter-spacing;
+}

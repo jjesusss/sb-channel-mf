@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.scss";
+import styles from "./styles.module.scss";
 import Tabs from "../../components/Tabs";
 import HomeSection from "../../sections/Home/index";
 import VideosSection from "../../sections/Videos";
@@ -10,43 +10,46 @@ import NotificationSection from "../../sections/Notification";
 
 function LifeStylePage() {
   return (
-    <main className="ScreenBidPage">
-      <div className="banner">
-        <div className="text">
-          <img className="title" src="/images/bidt-logo.svg" alt="" />
-          <p className="description">Somos a plataforma número 1 para colecionadores e amantes de carros clássicos e esportivos.</p>
+    <main className={styles["ScreenBidPage"]}>
+      <div className={styles["banner"]}>
+        <div className={styles["text"]}>
+          <img className={styles["title"]} src="/images/bidt-logo.svg" alt="" />
+          <p className={styles["description"]}>
+            Somos a plataforma número 1 para colecionadores e amantes de carros
+            clássicos e esportivos.
+          </p>
         </div>
       </div>
       <Tabs
         tabs={[
           {
             title: "Início",
-            content: <HomeSection />
+            content: <HomeSection />,
           },
           {
             title: "Produtos",
-            content: <ProductSection />
+            content: <ProductSection />,
           },
           {
             title: "Coleções",
-            content: <EventSection />
+            content: <EventSection />,
           },
           {
             title: "Vídeos",
-            content: <VideosSection />
+            content: <VideosSection />,
           },
           {
             title: "Blog",
-            content: <BlogSection />
+            content: <BlogSection />,
           },
           {
             title: "Sobre",
-            content: ""
+            content: "",
           },
           {
             title: "Notificações",
-            content: <NotificationSection />
-          }
+            content: <NotificationSection />,
+          },
         ]}
       />
     </main>

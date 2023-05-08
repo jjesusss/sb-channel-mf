@@ -1,6 +1,6 @@
 import React from "react";
 import VideoFrame from "../VideoFrame/VideoFrame";
-import "./styles.scss";
+import styles from "./styles.module.scss";
 
 const SeactionDetails = (props: {
   isLive?: boolean;
@@ -12,18 +12,18 @@ const SeactionDetails = (props: {
   const { isLive = true, logo, text, urlVideo, channel } = props;
 
   return (
-    <div className="sectionDetails">
+    <div className={styles["sectionDetails"]}>
       {isLive && (
-        <div className="videoSection">
+        <div className={styles["videoSection"]}>
           <VideoFrame autoPlay UrlVideo={urlVideo} controls />
         </div>
       )}
-      <div className="infoSection">
-        {isLive && <span className="live">AO VIVO</span>}
-        <img className="imgAgro" src={logo} alt="" />
-        <p className="text">{text}</p>
+      <div className={styles["infoSection"]}>
+        {isLive && <span className={styles["live"]}>AO VIVO</span>}
+        <img className={styles["imgAgro"]} src={logo} alt="" />
+        <p className={styles["text"]}>{text}</p>
         <button
-          className="subscribe"
+          className={styles["subscribe"]}
           onClick={() =>
             window.open(`https://youtube.com/${channel}?sub_confirmation=1`)
           }

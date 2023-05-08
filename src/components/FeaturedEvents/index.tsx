@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.scss";
+import styles from "./styles.module.scss";
 import CardSlider from "../CardSlider";
 import validateImageUrl from "../../utils/validateImageUrl";
 import formatRangeDateAndHour from "../../utils/formatRangeDateAndHour";
@@ -14,12 +14,12 @@ const FeaturedEvents = (props: {
   const { items, title, emptyListMessage } = props;
 
   return (
-    <div className="FeaturedEvents">
+    <div className={styles["FeaturedEvents"]}>
       <h3>
         <img src="/images/imageAuthor.svg" alt="" /> Eventos indicados por{" "}
         {title}
       </h3>
-      <div className="content">
+      <div className={styles["content"]}>
         {
           // eslint-disable-next-line react/prop-types
           items?.length ? (
@@ -31,8 +31,9 @@ const FeaturedEvents = (props: {
             >
               {
                 // eslint-disable-next-line react/prop-types
-                items?.map((item: any) => (
+                items?.map((item: any, i: number) => (
                   <LiveCard
+                    key={i}
                     title={item.eventName}
                     thumbUrl={validateImageUrl(item.auctionImageUrl)}
                     time={formatRangeDateAndHour(
@@ -40,7 +41,7 @@ const FeaturedEvents = (props: {
                       item.endDateTime
                     )}
                     description={item.eventFullDescription}
-                    className="liveCard"
+                    className={styles["liveCard"]}
                     productsPreviewImgs={item?.gallery || []}
                     isLive={false}
                     charactersLimit={50}
@@ -49,7 +50,7 @@ const FeaturedEvents = (props: {
               }
             </CardSlider>
           ) : (
-            <span className="noContent">{emptyListMessage}</span>
+            <span className={styles["noContent"]}>{emptyListMessage}</span>
           )
         }
       </div>

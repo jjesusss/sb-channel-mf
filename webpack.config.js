@@ -1,17 +1,21 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const ModuleFederationPlugin = require("webpack/lib/container/ModuleFederationPlugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const path = require('path');
+const path = require("path");
 
 const deps = require("./package.json").dependencies;
 module.exports = (_, argv) => ({
   output: {
-    publicPath: "https://sb-channel-mf.vercel.app/",
-    path: path.resolve(__dirname, 'public')
+    publicPath: "http://localhost:3003/",
+    path: path.resolve(__dirname, "public"),
   },
 
   resolve: {
-    extensions: [".tsx", ".ts", ".jsx", ".js", ".json"],
+    extensions: [".tsx", ".ts", ".jsx", ".js", ".json", ".scss"],
+    alias: {
+      "@env": path.resolve(__dirname, "src/env.js"),
+      // adicione mais aliases aqui, se necessário
+    },
   },
 
   devServer: {
@@ -30,11 +34,16 @@ module.exports = (_, argv) => ({
       },
       {
         test: /\.scss$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader", "sass-loader"]
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "postcss-loader",
+          "sass-loader",
+        ],
       },
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader"]
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
         test: /\.(ts|tsx|js|jsx)$/,
@@ -65,11 +74,13 @@ module.exports = (_, argv) => ({
           requiredVersion: deps["react-dom"],
         },
       },
-    }),    
+    }),
     new HtmlWebPackPlugin({
       template: "./public/index.html",
     }),
-    new MiniCssExtractPlugin(),
-
+    new MiniCssExtractPlugin({
+      filename: '[name].[contenthash].css',
+      chunkFilename: '[id].[contenthash].css',
+    }),
   ],
 });

@@ -1,7 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
 import "./index.scss";
-import LifeStylePage from "./pages/LifeStylePage/LifeStylePage";
+import { BrowserRouter as Router } from "react-router-dom";
+import { ChannelRoutes } from "./routes/ChannelRoutes";
 
-ReactDOM.render(<LifeStylePage />, document.getElementById("app"));
+ReactDOM.render(
+  <Router>
+    <ChannelRoutes />
+  </Router>,
+  document.getElementById("app")
+);

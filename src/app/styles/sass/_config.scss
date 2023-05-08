@@ -1,0 +1,119 @@
+/**
+ * Fonts
+ **/
+
+/**
+* Colors
+*/
+
+$color-default: #082a4d;
+$color-secondary: #4e85bf;
+$color-hover: #0f3256;
+$color-dark: #000000;
+$color-light: #ffffff;
+$color-body: #f8f9fa;
+$color-medium: #c2c2c2;
+$color-dark-light: #e7e8ec;
+$color-dark-medium: #8e9298;
+$color-dark-hard: #495057;
+$color-green-light: #72b699;
+$color-red-light: #ed6b6c;
+$color-ambar: #d69d10;
+$color-subtitle-medium: #8f969d;
+$color-grey: #8f969d;
+$color-grey-default: #acb5bd;
+$color-grey-light: #d9dbe3;
+$color-grey-dark: #35384d;
+
+/**
+* Borders
+*/
+
+$border-style-default: solid;
+$border-width-none: 0;
+$border-width-thin: 1px;
+$border-width-thick: 2px;
+$border-width-thicker: 4px;
+$border-radius-none: 0;
+$border-radius-small: 8px;
+$border-radius-medium: 20px;
+$border-radius-pill: 500px;
+$border-radius-circular: 50%;
+
+/**
+* Font
+*/
+
+$font-size-xs: 12px;
+$body_s: 14px;
+$font-size-sm: 16px;
+$title-l-font-size: 24px;
+$font-size-lg: 32px;
+$font-line-height-xxxs: 12px;
+$font-line-height-xxs: 16px;
+$font-line-height-xs: 20px;
+$font-line-height-sm: 24px;
+$font-line-height-md: 28px;
+$font-line-height-lg: 32px;
+$font-line-height-xl: 36px;
+$font-line-height-xxl: 48px;
+$font-line-height-xxxl: 64px;
+$font-line-height-ul: 80px;
+$spacing-inline-xxxs: 4px;
+$spacing-inline-xxs: 8px;
+$spacing-inline-xs: 16px;
+$spacing-inline-sm: 24px;
+$spacing-inline-md: 32px;
+$spacing-inline-lg: 48px;
+$spacing-inline-xl: 64px;
+$spacing-inset-xxs: 2px;
+$spacing-inset-xs: 4px;
+$spacing-inset-sm: 8px;
+$spacing-inset-md: 16px;
+$spacing-inset-lg: 24px;
+$spacing-inset-xl: 32px;
+$spacing-squish-xs: 4px 8px;
+$spacing-squish-sm: 8px 16px;
+$spacing-squish-md: 16px 24px;
+$spacing-squish-lg: 16px 32px;
+$spacing-squish-xl: 32px 48px;
+$spacing-squish-xxl: 50px 42px;
+$spacing-stack-xxxs: 4px;
+$spacing-stack-xxs: 8px;
+$spacing-stack-xs: 16px;
+$spacing-stack-sm: 24px;
+$spacing-stack-md: 32px;
+$spacing-stack-lg: 48px;
+$spacing-stack-xl: 72px;
+$spacing-stack-xxl: 120px;
+$spacing-stack-xxxl: 160px;
+
+/**
+Shadow
+**/
+
+@mixin shadow-box() {
+  -webkit-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.07);
+}
+
+@mixin shadow-box-top() {
+  -webkit-box-shadow: 0px -4px 30px 0px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 0px -4px 30px 0px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px -4px 30px 0px rgba(0, 0, 0, 0.07);
+}
+
+/**
+* Divisor
+**/
+
+/**
+* Ellipsis
+**/
+
+@mixin ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

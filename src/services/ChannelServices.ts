@@ -1,5 +1,5 @@
-import { Config } from "../../env";
-import BaseHttpService from "../../services/baseHttpService";
+import { Config } from "../env";
+import BaseHttpService from "./baseHttpService";
 
 export default class YoutubeList extends BaseHttpService {
   getAgroVideos = async () => {

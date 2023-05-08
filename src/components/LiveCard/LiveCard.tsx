@@ -1,8 +1,7 @@
 import React from "react";
 import formatImageSize from "../../utils/formatImageSize";
 import limitCharacters from "../../utils/limitCharacters";
-
-import "./styles.scss";
+import styles from "./styles.module.scss";
 
 // eslint-disable-next-line react/prop-types
 const LiveTag = (props: { text: string }) => (
@@ -83,13 +82,13 @@ const LiveCard = (props: {
     numberOfCards[`${numberOfImages === 3 ? 2 : numberOfImages}`];
 
   return (
-    <div className={["LiveCardContainer", className].join(" ")}>
+    <div className={[`${styles["LiveCardContainer"]}, ${className}`].join(" ")}>
       {isLive && <LiveTag text="AO VIVO" />}
       <div
-        className="LiveCardContainer__cardVideo"
+        className={styles["LiveCardContainer__cardVideo"]}
         style={imagesPosition(ImagesCard.length)}
       >
-        <div className="logoComponent">
+        <div className={styles["logoComponent"]}>
           <div
             style={{
               backgroundImage: `url(${thumbUrl})`,
@@ -107,9 +106,9 @@ const LiveCard = (props: {
         </div>
       </div>
       <time>{time}</time>
-      <span className="title">{limitCharacters(title, 25)}</span>
+      <span className={styles["title"]}>{limitCharacters(title, 25)}</span>
       <span
-        className="description"
+        className={styles["description"]}
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{
           __html: limitCharacters(description, charactersLimit),

@@ -1,0 +1,204 @@
+/**
+    * @tokens Colors
+    * @presenter Color
+    */
+
+$brand-primary: #FF6600;
+$brand-secondary: #0050A0;
+
+$background-light: #F8F8F8;
+$background-dark: #F8F8F8;
+
+/**
+    * @tokens ColorsFunctional
+    * @presenter Color
+    */
+
+$functional-primary-default: #EC660B;
+$functional-primary-hover: #FF8837;
+$functional-primary-active: #C85609;
+$functional-primary-disabled: #E8A578;
+
+$functional-primary-100 : #FFDEAD;
+$functional-primary-200 : #FFC46B;
+$functional-primary-300 : #D69062;
+$functional-primary-400 : #FF983F;
+$functional-primary-500 : #FF983F;
+
+$functional-secondary-default: #1283C2;
+$functional-secondary-hover: #35ACEE;
+$functional-secondary-active: #3373B3;
+$functional-secondary-disabled: #C5D1DD;
+
+$functional-secondary-100 : #E2ECF3;
+$functional-secondary-200 : #9FCFEA;
+$functional-secondary-300 : #86A1BB;
+$functional-secondary-400 : #55708B;
+$functional-secondary-500 : #002971;
+
+/**
+    * @tokens ColorsText
+    * @presenter Color
+    */
+
+$text-darkness : #131415;
+$text-dark : #313234;
+$text-medium : #66696F;
+$text-light : #BEC5CB;
+$text-lightest : #EBECED;
+
+/**
+    * @tokens ColorsFeedback
+    * @presenter Color
+    */
+$feedback-error : #BD3939;
+$feedback-warning : #FF7D25;
+$feedback-success : #59AC7C;
+$feedback-report : #0084DC;
+$feedback-report : #545B67;
+
+/**
+    * @tokens ColorsTags
+    * @presenter Color
+    */
+$tags-event-end-soon : #FFEFD6;
+$tags-event-live : #E70061;
+$tags-event-time-and-date : #DEF6ED;
+$tags-event-finished : #ECEEEF;
+$tags-event-start-soon : #D9ECF7;
+
+/**
+    * @tokens ColorsS4Pay
+    * @presenter Color
+    */
+$S4Pay-brand-primary : #4197E2;
+$S4Pay-background-header : #4C5871;
+$S4Pay-background-light : #F6F6F6;
+
+/**
+    * @tokens ColorsOld
+    * @presenter Color
+    *///////////////////////////////////////////
+    
+//B
+$BLACK: #000000;
+$BLACK_RGB: rgba(0, 0, 0, 1);
+$BLACK_RGB_0: rgba(0, 0, 0, 0);
+$BLACK_RGB_03: rgba(0, 0, 0, 0.03);
+$BLACK_RGB_06: rgba(0, 0, 0, 0.06);
+$BLACK_2B: #0000002b;
+$BRAND_DARK: #dd5d00;
+$BRIGHT_GRAY: #eaeaea;
+$BORDER: #c8c8c8;
+
+//C
+$CHINESE_WHITE: #e0e0e0;
+
+//D
+$DARKEST: #091b1e;
+$DARK_GRAY_TRANSPARENCY: #33333399;
+$DARK_GREEN: #101211;
+$DARK_ORANGE: #fe8101;
+$DARK_ORANGE_RGB: rgba(255, 130, 1, 1);
+$DIM_GRAY: #707070;
+$DUSTY_GRAY: #969696;
+$DUSTY_GRAY_RGB: rgba(150, 150, 150, 1);
+$DARK_DOWN: #3d3d3d;
+
+//E
+$ECLIPSE: #3f3f3f;
+
+//G
+$GAINSBORO: #dfdfdf;
+$GRAY: #333333;
+$GRAY_TRANSPARENCY: #b5b4b099;
+$GRAY_63: #a1a1a1;
+$GREEN_LEAF: #417505;
+$GREEN: #008000;
+
+//I
+$INK_BLUE: #004191;
+
+//L
+$LIGHT_BLUE: #2976d3;
+$LIGHT_GREY: #d7d7d7;
+$LYNX_WHITE: #f7f7f7;
+$LIGHT_GREY_06: #66696f;
+
+//M
+$MERCURY: #e2e2e2;
+
+//N
+$NERO: #2d2d2d;
+$NERO05: #2d2d2d0d;
+$NERO12: #2d2d2d1f;
+$NERO30: #2d2d2d4d;
+$NERO50: #2d2d2d80;
+$NERO60: #2d2d2d99;
+$NERO75: #2d2d2dbf;
+$NERO80: #2d2d2dcc;
+$NERO_RGB_2: rgba(45, 45, 45, 0.2);
+$NEUTRAL_DARK: #8e8e8e;
+$NIGHT_RIDER: #343434;
+
+//O
+$ORANGE: #f4511e;
+$ORANGE_PEEL: #ffa101;
+
+//P
+$PINK_SWAN: #b3b3b3;
+$PRIMARY: #f56700;
+$PRIMARY10: #f567001a;
+$PRIMARY80: #f56700cc;
+$PRIMARY50: #f5670080;
+$PRIMARY35: #f5670059;
+$PRIMARY30: #f567004d;
+$PRIMARY20: #f5670033;
+
+//R
+$RED: #cc3030;
+
+//S
+$SEASHELL: #fff1e4;
+$SILVER: #cbcbcb;
+
+//T
+$TRANSPARENT: transparent;
+
+//W
+$WHITE: #ffffff;
+$WHITE90: #f8f8f8;
+$WHITE85: #ffffff55;
+$WHITE50: #ffffff80;
+$WHITE30: #ffffff45;
+$WHITE20: #ffffff33;
+$WHITE10: #ffffff1a;
+$WHITE_RGB: rgba(255, 255, 255, 1);
+$WHITE_SMOKE: #f4f4f4;
+
+// SUPERBID
+$LARANJA: #ff6600;
+$LARANJA_BID: $LARANJA;
+$LARANJA_MEDIO: #ff983f;
+$LARANJA_BOTAO: #ec660b;
+$LARANJA_OFF: #d69062;
+$LARANJA_LIGHT: #ffc46b;
+$LARANJA_EXTRA_LIGHT: #ffdead;
+
+$AZUL: #002971;
+$AZUL_DARK: $AZUL;
+$AZUL_BID: #0050a0;
+$AZUL_BOTAO: #1283c2;
+$AZUL_BOTAO_HOVER: #0E92DC;
+$AZUL_OFF: #55708b;
+$AZUL_LIGHT: #9fcfea;
+$AZUL_EXTRA_LIGHT: #e2ecf3;
+
+$CINZA: #131415;
+$CINZA_DARK: $CINZA;
+$CINZA_MEDIO: #313234;
+$CINZA_CLARO6: #313234;
+$CINZA_CLARO7: #73757d;
+$CINZA_LIGHT: #bec5cb;
+$CINZA_EXTRA_LIGHT: #ebeced;
+$CINZA_FUNDO_ATUAL: #f8f8f8;

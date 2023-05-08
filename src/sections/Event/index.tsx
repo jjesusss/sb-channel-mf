@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.scss";
+import styles from "./styles.module.scss";
 import LiveCard from "../../components/LiveCard/LiveCard";
 
 const EventSection = () => {
@@ -36,15 +36,15 @@ const EventSection = () => {
   };
 
   return (
-    <div className="EventPage">
+    <div className={styles["EventPage"]}>
       <h3>Coleções selecionadas para você</h3>
-      <span className="span" />
+      <span className={styles["span"]} />
 
-      <div className="content">
-        <div className="cards">
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((item: any) => (
+      <div className={styles["content"]}>
+        <div className={styles["cards"]}>
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((item: any, i) => (
             <LiveCard
-              key={item.title}
+              key={i}
               thumbUrl={liveCardData.thumbUrl}
               title={liveCardData.title}
               time={liveCardData.time}
